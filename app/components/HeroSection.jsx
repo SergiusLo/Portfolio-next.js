@@ -21,9 +21,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base  sm:text-lg mb-6 lg:text-xl">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium ad commodi rem quod, officiis corrupti labore autem
-            magni, quam.
+          Welcome to my portfolio website! I'm a passionate developer specializing in React.js, TypeScript, and Next.js. Explore my projects, skills, and achievements below.
           </p>
           <div>
             <button className="w-full sm:w-fit px-6 py-3 rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white ">
