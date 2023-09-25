@@ -31,7 +31,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Welcome to my portfolio website! I'm a passionate developer
+            Welcome to my portfolio website! I&apos;m a passionate developer
             specializing in React.js, TypeScript, and Next.js. Explore my
             projects, skills, and achievements below.
           </p>
