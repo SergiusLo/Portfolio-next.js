@@ -9,8 +9,8 @@ const HeroSection = () => {
     <section className="lg:py-16">
       <div className="grid grid-cols-3 sm:grid-cols-12">
         <motion.div
-          initial={{ opacity: 0, scale:0.5 }}
-          animate={{ opacity: 1, scale:1 }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
@@ -25,7 +25,7 @@ const HeroSection = () => {
                 1000,
                 "Frontend Developer",
                 1000,
-                "Work with React.js",
+                "Work with React&apos;.js",
               ]}
               wrapper="span"
               speed={10}
@@ -48,11 +48,12 @@ const HeroSection = () => {
             </button>
           </div>
         </motion.div>
-        <motion.div 
-                  initial={{ opacity: 0, scale:0.5 }}
-                  animate={{ opacity: 1, scale:1 }}
-                  transition={{ duration: 0.3 }}
-         className="col-span-4 place-self-center mt-4 lg:mt-0">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3 }}
+          className="col-span-4 place-self-center mt-4 lg:mt-0"
+        >
           <div className="rounded-full bg-[#181818] lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] relative">
             <Image
               src="/images/developer.jpg"
