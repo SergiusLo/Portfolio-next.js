@@ -5,9 +5,9 @@ import MenuOverlay from "./MenuOverlay";
 import NavLink from "./NavLink";
 
 const navLinks = [
-  { title: "About", path: "#about" },
-  { title: "Projects", path: "#projects" },
-  { title: "Contact", path: "#contact" },
+  { title: "About", path: "about" },
+  { title: "Projects", path: "projects" },
+  { title: "Contact", path: "contact" },
 ];
 
 const NavBar = () => {
