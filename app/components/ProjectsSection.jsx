@@ -3,60 +3,61 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
+import { Element } from 'react-scroll';
 
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Shot-app",
+    description: "Dribble clone",
+    image: "/images/projects/shoot-app.png",
+    tag: ["All", "App"],
+    gitUrl: "https://github.com/SergiusLo/Shot-app",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "DFG",
+    description: "Landing page",
+    image: "/images/projects/dfg.png",
+    tag: ["All", "Markup"],
+    gitUrl: "https://github.com/SergiusLo/DFG_website",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Amazon",
+    description: "Amazon clone",
+    image: "/images/projects/amazon-app.png",
+    tag: ["All", "App"],
+    gitUrl: "https://github.com/SergiusLo/amazon-clone-next",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
+    title: "Elden Ring Blog",
+    description: "Blog about Elden Ring",
+    image: "/images/projects/elden-blog.png",
+    tag: ["All", "App"],
+    gitUrl: "https://github.com/SergiusLo/Elden_blog",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Meetups App",
+    description: "Meetups App on React.js",
+    image: "/images/projects/meets-app.png",
+    tag: ["All", "App"],
+    gitUrl: "https://github.com/SergiusLo/meetups-app-react",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Pig Game",
+    description: "Pig game for 2 local-players",
+    image: "/images/projects/pig-game.png",
+    tag: ["All", "Markup"],
+    gitUrl: "https://github.com/SergiusLo/Pig_game",
     previewUrl: "/",
   },
 ];
@@ -79,7 +80,8 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section>
+    
+    <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4">
         ProjectsSection
       </h2>
@@ -91,13 +93,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="App"
+          isSelected={tag === "App"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Markup"
+          isSelected={tag === "Markup"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -122,6 +124,7 @@ const ProjectsSection = () => {
         ))}
       </ul>
     </section>
+  
   );
 };
 
