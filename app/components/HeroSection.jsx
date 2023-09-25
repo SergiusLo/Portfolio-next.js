@@ -1,6 +1,4 @@
-"use client";
 import Image from "next/image";
-
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
@@ -32,7 +30,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base  sm:text-lg mb-6 lg:text-xl">
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             Welcome to my portfolio website! I'm a passionate developer
             specializing in React.js, TypeScript, and Next.js. Explore my
             projects, skills, and achievements below.
