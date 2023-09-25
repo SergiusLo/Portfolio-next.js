@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
@@ -7,14 +9,14 @@ const HeroSection = () => {
     <section className="lg:py-16">
       <div className="grid grid-cols-3 sm:grid-cols-12">
         <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, scale:0.5 }}
+          animate={{ opacity: 1, scale:1 }}
           transition={{ duration: 0.3 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Hello, I&apos;m
+              Hello, I'm
             </span>{" "}
             <br />
             <TypeAnimation
@@ -23,15 +25,15 @@ const HeroSection = () => {
                 1000,
                 "Frontend Developer",
                 1000,
-                "Work with React&apos;.js",
+                "Work with React.js",
               ]}
               wrapper="span"
               speed={10}
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Welcome to my portfolio website! I&apos;m a passionate developer
+          <p className="text-[#ADB7BE] text-base  sm:text-lg mb-6 lg:text-xl">
+            Welcome to my portfolio website! I'm a passionate developer
             specializing in React.js, TypeScript, and Next.js. Explore my
             projects, skills, and achievements below.
           </p>
@@ -46,12 +48,11 @@ const HeroSection = () => {
             </button>
           </div>
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.3 }}
-          className="col-span-4 place-self-center mt-4 lg:mt-0"
-        >
+        <motion.div 
+                  initial={{ opacity: 0, scale:0.5 }}
+                  animate={{ opacity: 1, scale:1 }}
+                  transition={{ duration: 0.3 }}
+         className="col-span-4 place-self-center mt-4 lg:mt-0">
           <div className="rounded-full bg-[#181818] lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] relative">
             <Image
               src="/images/developer.jpg"
